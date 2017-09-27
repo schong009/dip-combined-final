@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.example.junhaozeng.testdesign.Fragments.SettingsFragment">-->
+
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:id="@+id/settings_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="settings" />-->
+
+<!--</FrameLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:hint="@string/usr_name" />
+
+ <Button
+        android:id="@+id/button"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:text="Save" />
+
+    <Spinner
+        android:id="@+id/edit_gender"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Gender"
+        android:gravity="center_vertical|right"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_alignBottom="@+id/edit_gender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edit_date"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_below="@+id/edit_gender"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Date of Birth"
+        android:gravity="center_vertical|right"
+        android:layout_alignTop="@+id/edit_date"
+        android:layout_alignLeft="@+id/gender"
+        android:layout_alignStart="@+id/gender" />
+
+    <ProgressBar
+        android:id="@+id/edit_volume"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/edit_date"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/volume"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/edit_volume"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date"
+        android:text="Volume"
+        android:gravity="center_vertical|right" />
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Step goal"
+        android:gravity="center_vertical|right"
+        android:layout_below="@+id/volume"
+        android:layout_alignLeft="@+id/volume"
+        android:layout_alignStart="@+id/volume"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:id="@+id/edit_goal"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/edit_volume"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/goal"
+        android:layout_alignStart="@+id/goal"
+        android:layout_below="@+id/goal"
+        android:layout_marginTop="17dp"
+        android:text="Tips"
+        android:gravity="center_vertical|right"/>
+
+    <TextView
+        android:id="@+id/background"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/tip"
+        android:layout_alignStart="@+id/tip"
+        android:layout_below="@+id/tip"
+        android:layout_marginTop="17dp"
+        android:text="Background"
+        android:gravity="center_vertical|right"/>
+
+    <TextView
+        android:id="@+id/pet"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/background"
+        android:layout_alignStart="@+id/background"
+        android:layout_below="@+id/background"
+        android:layout_marginTop="17dp"
+        android:text="Pet"
+        android:gravity="center_vertical|right"/>
+
+    <TextView
+        android:id="@+id/declare"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/pet"
+        android:layout_alignStart="@+id/pet"
+        android:layout_below="@+id/pet"
+        android:layout_marginTop="17dp"
+        android:text="Declaration"
+        android:gravity="center_vertical|right"/>
+</RelativeLayout>

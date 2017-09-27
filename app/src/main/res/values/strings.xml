@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WDTDS</string>
+    <string name="title_health">Health</string>
+    <string name="title_pet">Pet</string>
+    <string name="title_settings">Settings</string>
+    <string name="null_result">No Record Found</string>
+    <string name="usr_name">Name</string>
+    <string name="health_frag_title"><b>Health Tracker</b></string>
+
+</resources>
